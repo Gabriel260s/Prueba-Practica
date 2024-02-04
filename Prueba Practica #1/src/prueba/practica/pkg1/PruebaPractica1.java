@@ -22,6 +22,7 @@ public class PruebaPractica1 {
         int opc = input.nextInt();
         char resp = 's';
         int cont_menu = 0;
+        // Un while que continua mientras el usuario siga queriendo estar en el menu
         while (resp == 's' || resp == 'S') {
             switch (opc) {
                 case 1:
@@ -30,6 +31,7 @@ public class PruebaPractica1 {
                     String nombre = input.nextLine();
                     System.out.println("Ingrese cuando veces quiere que se repita:");
                     int rep = input.nextInt();
+                    //Este for repite el mensaje las veces que usuario desee
                     for (int i = 0; i < rep; i++) {
                         System.out.println("!Hola mi nombre es " + nombre + " y miren mi prueba!");
 
